@@ -1,0 +1,50 @@
+{
+  "name": "react-express-boilerplate",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "debug": "^4.0.1",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "express-jwt": "^5.3.1",
+    "express-validation": "^1.0.2",
+    "express-winston": "^3.0.0",
+    "helmet": "^3.13.0",
+    "history": "^4.7.2",
+    "http-status": "^1.2.0",
+    "joi": "^13.6.0",
+    "jsonwebtoken": "^8.3.0",
+    "lodash": "^4.17.11",
+    "lodash.throttle": "^4.1.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.2.15",
+    "morgan": "^1.9.1",
+    "ramda": "^0.25.0",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-redux": "^5.0.7",
+    "react-redux-toastr": "^7.4.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.5",
+    "redux": "^4.0.0",
+    "redux-form": "^7.4.2",
+    "redux-thunk": "^2.3.0",
+    "winston": "^3.1.0"
+  },
+  "scripts": {
+    "start": "concurrently 'yarn start:web' 'yarn start:api'",
+    "start:web": "react-scripts start",
+    "start:api": "nodemon --delay 1 --ignore dist/ --exec npm run serve",
+    "serve": "node api/index.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1"
+  }
+}
