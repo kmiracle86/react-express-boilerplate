@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import ReduxToastr from 'react-redux-toastr';
 import routes from './routes';
 import configureStore from './configureStore';
+import 'react-redux-toastr/lib/css/react-redux-toastr.min.css'
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 

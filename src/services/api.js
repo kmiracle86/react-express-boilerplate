@@ -81,5 +81,8 @@ const patch = (route, body = null, requiresAuth = true) =>
 const del = (route, requiresAuth = true) =>
   execute('delete', route, null, requiresAuth);
 
+const login = formData => post('auth/login', formData);
+
 export default {
+  login,
 };

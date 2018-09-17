@@ -61,12 +61,13 @@ const login = formData =>
       if (res.token) {
         dispatch(setAuthToken(res.token));
         saveAuthToken(res.token);
-        dispatch(getCurrentUser());
-        history.push('/dashboard');
+        // dispatch(getCurrentUser());
+        // history.push('/dashboard');
       } else {
         toastr.error('Error', 'Unable to login. Please check your username and password.');
       }
     } catch (err) {
+      console.log('error', err);
       toastr.error('Error', 'Unable to login. Please check your username and password.');
     }
   };

@@ -1,6 +1,7 @@
 # react-express-boilerplate
 
 ## Installation
+* `yarn add global nodemon`
 * `yarn install`
 
 ## Running
